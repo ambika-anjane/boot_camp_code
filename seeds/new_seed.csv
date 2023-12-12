@@ -1,0 +1,8 @@
+employee_id,email,customer_id,date
+3425, mike@jaffleshop.com, 1,2018-01-01
+2354, sarah@jaffleshop.com, 6,2020-01-01
+2342, frank@jaffleshop.com, 8,2022-01-01
+1234, jennifer@jaffleshop.com, 9,2022-05-05
+1234, jennifer@jaffleshop.com, 9,2022-07-05
+3344, jennifer@jaffleshop.com, 9,2022-09-21
+3344, juliet@jaffleshop.com, 9,2022-09-21
