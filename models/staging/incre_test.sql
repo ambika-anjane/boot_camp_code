@@ -7,6 +7,7 @@
 
 select
  id as order_id, 
+ order_date,
  user_id,
  _etl_loaded_at from {{ ref('raw_orders') }}
 
