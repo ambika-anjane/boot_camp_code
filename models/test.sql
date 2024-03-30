@@ -7,8 +7,9 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table',severity = 'warn', warn_if='>10'
-
+{{ config(materialized='table',
+pre_hook="drop table if exists public.raw_customers",
+post_hook="update {{ this }} SET id=2 where id = 1"
 ) }}
 
 
@@ -23,19 +24,7 @@ with source_data as (
     union all
     select null as id
     union all
-    select null as id
-    union all
-    select null as id
-    union all
-    select null as id
-    union all
-    select null as id
-    union all
-    select null as id
-    union all
-    select null as id
-    union all
-    select null as id
+    select 2 as id
 
 )
 

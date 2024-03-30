@@ -1,0 +1,5 @@
+metadata_dbt_schema_version: https://schemas.getdbt.com/dbt/run-results/v5.json
+metadata_dbt_version: 1.7.4
+metadata_generated_at: 2024-03-13T06:13:04.429746Z
+metadata_invocation_id: ce6740e5-fa87-4eee-b590-7abe533e4f84
+results: [{'status': 'success', 'timing': [{'name': 'compile', 'started_at': '2024-03-13T06:13:03.921978Z', 'completed_at': '2024-03-13T06:13:03.926049Z'}]}]

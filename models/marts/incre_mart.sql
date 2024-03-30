@@ -86,7 +86,7 @@ final as (
   where orders._etl_loaded_at >= (select max(_etl_loaded_at) from {{ this }})
 {% endif %}
         
-       ''
+       
 )
 
 select * from final

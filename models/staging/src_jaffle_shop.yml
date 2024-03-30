@@ -1,10 +1,13 @@
-version: 2
+  version: 2
 
 sources:
   - name: jaffle_shop
+    loader: fivetran
+    database: postgres
     schema: jaffle
     tables:
       - name: raw_customers
+        
         columns:
           - name: id
             tests:
@@ -14,6 +17,7 @@ sources:
       - name: raw_orders
         columns:
           - name: id
+            tags: [my_column_tag]
             tests:
               - unique
               - not_null

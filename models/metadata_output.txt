@@ -1,0 +1,5 @@
+dbt_schema_version: https://schemas.getdbt.com/dbt/run-results/v5.json
+dbt_version: 1.7.4
+generated_at: 2024-03-13 23:46:24.427095
+invocation_id: ce6740e5-fa87-4eee-b590-7abe533e4f84
+env: {}

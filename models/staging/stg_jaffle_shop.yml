@@ -2,8 +2,10 @@ version: 2
 
 models:
   - name: stg_customers
+    identifier: "customers_new"
     columns: 
       - name: customer_id
+        tags: [my_column_tag]
         tests:
           - unique
           - not_null

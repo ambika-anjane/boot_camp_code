@@ -6,7 +6,7 @@ version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'test_test'
+profile: 'dbt_new'
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -45,7 +45,6 @@ models:
     example:
       +tags: "example_tag"
       +materialized: view
-      +warn_if: >1
       +store_failures: true
       
     staging:
@@ -68,3 +67,6 @@ tests:
 
 vars:
     my_variable: "{{ env_var('MY_VARIABLE') }}"
+
+# config:
+#   profile_dir: 'C:/Users/ambik/ambik_backup/.dbt'
