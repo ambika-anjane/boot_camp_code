@@ -3,8 +3,8 @@
 sources:
   - name: jaffle_shop
     loader: fivetran
-    database: postgres
-    schema: jaffle
+    database: shibli_test
+    schema: shibli_schema
     tables:
       - name: raw_customers
         

@@ -2,7 +2,7 @@
     config(
         materialized='incremental',
         unique_key  = 'user_id',
-        merge_update_columns = ['id', 'order_date'],
+        -- merge_update_columns = ['id', 'order_date'],
     )
 }}
 
